@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'search-box',
+  selector: 'shared-search-box',
   templateUrl: './search-box.component.html'
 })
 export class SearchBoxComponent {
