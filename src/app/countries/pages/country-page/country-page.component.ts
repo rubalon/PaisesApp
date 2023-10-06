@@ -19,7 +19,6 @@ export class CountryPageComponent implements OnInit {
     ) {}
 
   ngOnInit(): void {
-    console.log('ng page')
     this.activatedRoute.params
       .pipe(
         switchMap( ({ id }) => this.countriesServices.searchCountryByAlphacode( id )),

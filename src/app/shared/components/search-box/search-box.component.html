@@ -2,6 +2,8 @@
   type="text"
   [placeholder]="placeholder"
   (keyup.enter)="emitValue(txtInput.value)"
+  (keyup)="onDebounce(txtInput.value)"
+  [value]="intialterm"
   class="form-control"
   #txtInput
   >
